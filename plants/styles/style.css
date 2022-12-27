@@ -51,6 +51,7 @@ body, ul, p, h1, h2, h4 {
 }
 
 .header__nav_menu {
+  width: 452px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -231,7 +232,8 @@ body, ul, p, h1, h2, h4 {
 }
 
 .service_section_nav_menu {
-  padding: 1px 0 0 3px;
+  width: 561px;
+  padding: 1px 0 0 2px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -251,7 +253,6 @@ body, ul, p, h1, h2, h4 {
   border: 1px solid #E06733;
   border-radius: 5px;
   background-color: inherit;
-  margin-right: 40px;
   transition: .5s;
 }
 
