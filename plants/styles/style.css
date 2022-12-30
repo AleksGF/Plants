@@ -329,7 +329,7 @@ body, ul, p, h1, h2, h4 {
 .price_section_prices_content {
   width: 332px;
   height: 282px;
-  padding: 19px 0;
+  padding: 19px 0 17px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -536,6 +536,7 @@ body, ul, p, h1, h2, h4 {
   list-style: none;
   width: 188px;
   height: 50px;
+  padding-left: 0;
   padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
