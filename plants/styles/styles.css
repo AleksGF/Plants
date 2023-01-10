@@ -1,0 +1,17 @@
+@import "./common.css";
+
+/* Header styles */
+@import "./header.css";
+
+/* Main styles */
+@import "./title_section.css";
+@import "./about_section.css";
+@import "./service_section.css";
+@import "./price_section.css";
+@import "./contacts_section.css";
+
+/* Footer styles */
+@import "./footer.css";
+
+/* Media queries */
+@import "./media_1320.css";

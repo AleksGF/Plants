@@ -1,0 +1,112 @@
+/* Price Section */
+.price_section {
+  width: 100%;
+}
+
+.price_section_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.price_section_prices_header {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.price_section_prices_content {
+  width: 332px;
+  height: 282px;
+  padding: 19px 0 17px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+
+.price_section_prices_content_item {
+  width: 250px;
+  height: 50px;
+  padding: 15px 40px;
+  background: #EDF2EC;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price_section_prices_content_item:hover {
+  cursor: pointer;
+}
+
+.price_section_prices_content_item_name {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.price_section_prices_content_item_btn {
+  width: 16px;
+  height: 16px;
+}
+
+.price_section_contactWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price_section_contact_header {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
+}
+
+.price_section_contact_header_capture {
+  color: #499A18;
+}
+
+.price_section_contact_btn {
+  width: 162px;
+  height: 50px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  transition: .5s;
+}
+
+.price_section_contact_btn:hover {
+  cursor: pointer;
+  background-color: #E06733;
+  color: #FFFFFF;
+}
+
+.price_section_contact_img {
+  margin-top: 40px;
+  width: 152px;
+  height: 175px;
+}

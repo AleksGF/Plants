@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, ul, p, h1, h2, h4 {
+  margin: 0;
+}
+
+.width_wrapper {
+  margin: 0 auto;
+}
