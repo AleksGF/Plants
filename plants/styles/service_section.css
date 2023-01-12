@@ -20,8 +20,6 @@
   font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
   color: #499A18;
 }
 
@@ -58,7 +56,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 25px;
 }
 
 .service_section_content_item {
@@ -78,7 +75,6 @@
 }
 
 .service_section_content_item_header {
-  margin: 10px auto 15px auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -86,7 +82,6 @@
 }
 
 .service_section_content_item_description {
-  margin-bottom: 35px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

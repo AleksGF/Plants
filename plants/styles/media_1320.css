@@ -10,6 +10,17 @@
   /* Title section */
   .title_section {
     padding: 60px 109px 64px 109px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .title_section_wrapper {
+    align-items: flex-end;
+  }
+
+  .title_section_header {
+    font-size: 45px;
+    margin-bottom: 5px;
   }
 
   .title_section_img {
@@ -21,9 +32,20 @@
     max-width: 549px;
   }
 
+  .title_section_header_button {
+    margin-top: 4px;
+    margin-bottom: 31px;
+    height: 32px;
+  }
+
   /* About section */
   .about_section {
     padding: 93px 109px 94px 109px;
+  }
+
+  .about_section_wrapper {
+    justify-content: space-between;
+    align-items: center;
   }
 
   .about_section_text {
@@ -34,6 +56,8 @@
   .about_section_header {
     max-width: 463px;
     margin-bottom: 38px;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .about_section_img {
@@ -53,6 +77,8 @@
   .service_section_header {
     max-width: 305px;
     margin-right: 140px;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .service_section_nav_menu {
@@ -60,10 +86,22 @@
     padding: 1px 0 0 2px;
   }
 
+  .service_section_contentWrapper {
+    margin-bottom: 25px;
+  }
+
   .service_section_content_item {
-    max-width: 330px;
-    max-height: 450px;
+    width: 330px;
+    height: 450px;
     margin-bottom: 55px;
+  }
+
+  .service_section_content_item_header {
+    margin: 10px auto 15px auto;
+  }
+
+  .service_section_content_item_description {
+    margin-bottom: 35px;
   }
 
   /* Price Section */
@@ -73,6 +111,8 @@
 
   .price_section_prices_header {
     margin-bottom: 60px;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .price_section_contactWrapper {
@@ -81,11 +121,22 @@
 
   .price_section_contact_header {
     margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .price_section_contact_img {
+    margin-top: 40px;
   }
 
   /* Contacts section */
   .contacts_section {
     padding: 53px 109px 0 109px;
+  }
+
+  .contacts_section_wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .contacts_section_img {
@@ -98,8 +149,22 @@
     margin-top: 7px;
   }
 
+  .contacts_section_btn {
+    margin-top: 95px;
+  }
+
   /* Footer styles */
   .footer {
     padding: 40px 109px;
+    line-height: 50px;
+  }
+
+  .footer__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__github * {
+    margin-right: 20px;
   }
 }

@@ -13,8 +13,6 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
   color: #000000;
 }
 
@@ -73,8 +71,6 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
   text-align: right;
   color: #000000;
 }
@@ -106,7 +102,6 @@
 }
 
 .price_section_contact_img {
-  margin-top: 40px;
   width: 152px;
   height: 175px;
 }
