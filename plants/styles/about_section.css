@@ -1,8 +1,4 @@
 /* About section */
-.about_section {
-  width: 100%;
-}
-
 .about_section_wrapper {
   display: flex;
   flex-wrap: wrap;

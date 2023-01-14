@@ -1,8 +1,4 @@
 /* Price Section */
-.price_section {
-  width: 100%;
-}
-
 .price_section_wrapper {
   display: flex;
   flex-wrap: wrap;
