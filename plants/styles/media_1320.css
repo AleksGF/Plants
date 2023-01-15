@@ -7,6 +7,15 @@
     padding: 42px 109px 42px 111px;
   }
 
+  .header__nav_menu {
+    width: 452px;
+    line-height: 50px;
+  }
+
+  .header__nav_burger {
+    display: none;
+  }
+
   /* Title section */
   .title_section {
     padding: 60px 109px 64px 109px;
@@ -20,6 +29,7 @@
 
   .title_section_header {
     font-size: 45px;
+    line-height: 50px;
     margin-bottom: 5px;
   }
 
@@ -33,9 +43,11 @@
   }
 
   .title_section_header_button {
+    width: 158px;
     margin-top: 4px;
     margin-bottom: 31px;
     height: 32px;
+    font-size: 16px;
   }
 
   /* About section */
@@ -58,6 +70,11 @@
     margin-bottom: 38px;
     font-size: 40px;
     line-height: 52px;
+  }
+
+  .about_section_description {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .about_section_img {
@@ -84,10 +101,19 @@
   .service_section_nav_menu {
     width: 561px;
     padding: 1px 0 0 2px;
+    justify-content: space-between;
+  }
+
+  .service_section_nav_menu_item_button {
+    width: 161px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .service_section_contentWrapper {
     margin-bottom: 25px;
+    justify-content: space-between;
   }
 
   .service_section_content_item {
@@ -109,20 +135,48 @@
     padding: 40px 109px 115px 109px;
   }
 
+  .price_section_wrapper {
+    justify-content: space-between;
+  }
+
   .price_section_prices_header {
     margin-bottom: 60px;
     font-size: 40px;
     line-height: 48px;
   }
 
+  .price_section_prices_content {
+    width: 332px;
+    height: 282px;
+    padding: 19px 0 17px 0;
+  }
+
+  .price_section_prices_content_item {
+    width: 250px;
+    padding: 15px 40px;
+  }
+
+  .price_section_prices_content_item_name {
+    font-size: 20px;
+  }
+
   .price_section_contactWrapper {
     max-width: 455px;
+    align-items: flex-end;
   }
 
   .price_section_contact_header {
     margin-bottom: 40px;
     font-size: 40px;
     line-height: 50px;
+    text-align: right;
+  }
+
+  .price_section_contact_btn {
+    width: 162px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .price_section_contact_img {
@@ -147,10 +201,14 @@
   .contacts_section_header {
     margin-left: 45px;
     margin-top: 7px;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .contacts_section_btn {
     margin-top: 95px;
+    width: 450px;
+    padding: 0 35px 0 20px;
   }
 
   /* Footer styles */

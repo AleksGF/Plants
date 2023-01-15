@@ -12,14 +12,10 @@
   font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   color: #499A18;
 }
 
 .contacts_section_btn {
-  width: 450px;
-  height: 50px;
   background: #D6E7D2;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0;
@@ -27,7 +23,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 35px 0 20px;
+  height: 50px;
 }
 
 .contacts_section_btn:hover {

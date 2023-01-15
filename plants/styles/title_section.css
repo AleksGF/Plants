@@ -15,7 +15,6 @@
 
 .title_section_header {
   font-weight: 700;
-  line-height: 50px;
   color: #717171;
 }
 
@@ -24,13 +23,11 @@
 }
 
 .title_section_header_button {
-  width: 158px;
   border: 2px solid #E06733;
   border-radius: 10px;
   background: #EDF2EC;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;

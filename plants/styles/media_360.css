@@ -1,6 +1,6 @@
-@media (min-width: 640px) and (max-width: 1319px) {
+@media (min-width: 360px) and (max-width: 639px) {
   .width_wrapper {
-    max-width: 668px;
+    max-width: 330px;
   }
 
   .header {
@@ -8,54 +8,40 @@
   }
 
   .header__nav_menu {
-    width: 452px;
-    line-height: 50px;
-  }
-
-  .header__nav_burger {
     display: none;
   }
 
   /* Title section */
   .title_section {
-    padding: 38px 50px 70px 50px;
+    padding: 22px 25px 24px 25px;
     font-size: 16px;
     line-height: 25px;
   }
 
-  .title_section_wrapper {
-    flex-direction: row-reverse;
-  }
-
   .title_section_header {
-    font-size: 35px;
-    line-height: 50px;
-    margin-bottom: 30px;
-  }
-
-  .title_section_description {
-    margin-left: 5px;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
   }
 
   .title_section_img {
-    width: 280px;
-    height: 255px;
+    display: none;
   }
 
   .title_section_text {
-    max-width: 346px;
+    max-width: 315px;
   }
 
   .title_section_header_button {
-    width: 158px;
-    margin-top: 35px;
-    height: 44px;
-    font-size: 16px;
+    margin-top: 24px;
+    width: 100px;
+    height: 35px;
+    font-size: 10px;
   }
 
   /* About section */
   .about_section {
-    padding: 40px 50px 95px 50px;
+    padding: 30px 25px 31px 25px;
   }
 
   .about_section_wrapper {
@@ -63,10 +49,10 @@
   }
 
   .about_section_header {
-    width: 423px;
-    margin-bottom: 50px;
-    font-size: 35px;
-    line-height: 46px;
+    width: 288px;
+    margin-bottom: 13px;
+    font-size: 25px;
+    line-height: 33px;
     align-self: center;
     text-align: center;
   }
@@ -74,57 +60,57 @@
   .about_section_text {
     display: flex;
     flex-direction: column;
-    padding-bottom: 27px;
   }
 
   .about_section_description {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 25px;
   }
 
   .about_section_img {
-    width: 250px;
-    height: 258px;
-    margin-top: 40px;
+    width: 150px;
+    height: 147px;
+    margin-top: 3px;
   }
 
   /* Service section */
   .service_section {
-    padding: 60px 50px 33px 50px;
-  }
-
-  .service_section_headerWrapper {
-    margin-bottom: 40px;
+    padding: 30px 25px 27px 25px;
   }
 
   .service_section_header {
-    max-width: 305px;
-    font-size: 35px;
-    line-height: 46px;
-    margin-bottom: 42px;
+    max-width: 187px;
+    font-size: 25px;
+    line-height: 33px;
+    margin-bottom: 39px;
   }
 
   .service_section_nav_menu {
-    width: 559px;
     padding: 0;
-    justify-content: space-between;
   }
 
   .service_section_nav_menu_item_button {
-    width: 161px;
-    height: 50px;
-    font-size: 20px;
-    line-height: 26px;
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 9px;
+    margin-right: 10px;
   }
 
   .service_section_contentWrapper {
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 30px;
   }
 
   .service_section_content_item {
     width: 281px;
     height: 450px;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
+  }
+
+  .service_section_content_item:last-child {
+    margin-bottom: 0;
   }
 
   .service_section_content_item_img {
@@ -143,62 +129,68 @@
 
   /* Price Section */
   .price_section {
-    padding: 40px 50px 88px 50px;
+    padding: 25px 25px 40px 25px;
   }
 
   .price_section_wrapper {
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .price_section_pricesWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .price_section_prices_header {
-    font-size: 35px;
-    line-height: 42px;
-    padding: 0 15px;
-    margin-bottom: 57px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 40px;
   }
 
   .price_section_prices_content {
-    width: 332px;
-    height: 282px;
-    padding: 19px 0 17px 0;
+    width: 224px;
+    height: 235px;
+    padding: 19px 0 22px 0;
   }
 
   .price_section_prices_content_item {
-    width: 250px;
-    padding: 15px 40px;
+    width: 180px;
+    padding: 16px 40px 16px 30px;
   }
 
   .price_section_prices_content_item_name {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .price_section_contactWrapper {
-    width: 296px;
-    align-items: flex-end;
+    width: 230px;
+    align-items: center;
   }
 
   .price_section_contact_header {
-    margin-top: 100px;
-    margin-bottom: 28px;
-    font-size: 25px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    font-size: 20px;
     line-height: 35px;
-    text-align: right;
+    text-align: center;
   }
 
   .price_section_contact_btn {
-    width: 162px;
-    height: 50px;
-    font-size: 20px;
-    line-height: 26px;
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .price_section_contact_img {
-    margin-top: 33px;
+    display: none;
   }
 
   /* Contacts section */
   .contacts_section {
-    padding-top: 40px;
+    padding-top: 25px;
   }
 
   .contacts_section_wrapper {
@@ -207,30 +199,28 @@
   }
 
   .contacts_section_img {
-    margin-top: 250px;
-    margin-left: 20px;
-    width: 200px;
-    height: 248px;
+    margin-top: 132px;
+    width: 100px;
+    height: 124px;
     order: 2;
   }
 
   .contacts_section_header {
-    margin: 2px 15px 0 15px;
     order: 0;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 25px;
+    line-height: 33px;
   }
 
   .contacts_section_btn {
-    margin-top: 98px;
+    margin-top: 81px;
     order: 1;
-    width: 450px;
-    padding: 0 35px 0 20px;
+    width: 300px;
+    padding: 0 23px 0 19px;
   }
 
   /* Footer styles */
   .footer {
-    padding: 33px 279px 33px 272px;
+    padding: 22px 85px 22px 85px;
     line-height: 24px;
   }
 
@@ -245,11 +235,11 @@
 
   .footer__github_link {
     margin-right: 0;
-    margin-left: 7px;
+    margin-left: 3px;
   }
 
   .footer__rsschool {
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
