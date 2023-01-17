@@ -77,7 +77,7 @@
 
   /* About section */
   .about_section {
-    padding: 30px 25px 31px 25px;
+    padding: 30px 25px 30px 25px;
   }
 
   .about_section_wrapper {
@@ -105,8 +105,7 @@
 
   .about_section_img {
     width: 150px;
-    height: 147px;
-    margin-top: 3px;
+    height: 153px;
   }
 
   /* Service section */
@@ -182,7 +181,7 @@
   .price_section_prices_header {
     font-size: 25px;
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .price_section_prices_content {
