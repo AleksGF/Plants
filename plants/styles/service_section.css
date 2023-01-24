@@ -46,6 +46,11 @@
   color: #FFFFFF;
 }
 
+.service_section_nav_menu_item_button_activated {
+  background-color: #E06733;
+  color: #FFFFFF;
+}
+
 .service_section_contentWrapper {
   display: flex;
   flex-wrap: wrap;

@@ -1,8 +1,4 @@
-console.log(`Вёрстка соответствует макету. Ширина экрана 768px +24
-Вёрстка соответствует макету. Ширина экрана 380px +24
-Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15
-На ширине экрана 380рх и меньше реализовано адаптивное меню +22
-Максимальная оценка за задание 75 баллов`);
+console.log(``);
 
 // Remove anchor link
 onhashchange = e => {
@@ -67,6 +63,48 @@ const changeActiveNavMenuItem = () => {
   document.addEventListener('scroll', activeNavMenuItemHandler);
 };
 
+// Service section buttons actions
+const serviceSectionHandler = () => {
+  const buttons = document.querySelectorAll('.service_section_nav_menu_item_button');
+  const items = document.querySelectorAll('.service_section_content_item');
+  const activatedElements = [];
+
+  const buttonClickHandler = e => {
+    const action = e.target.dataset.action;
+
+    // Add selected and remove non-selected services to array (max 2)
+    if (activatedElements.includes(action)) {
+      activatedElements.splice(activatedElements.indexOf(action), 1);
+    } else if (activatedElements.length >= 2) {
+      activatedElements.splice(0, 2, action);
+    } else {
+      activatedElements.push(action);
+    }
+
+    // Add active class for selected buttons
+    [...buttons].forEach(el => {
+      if (activatedElements.includes(el.dataset.action)) {
+        el.classList.add('service_section_nav_menu_item_button_activated');
+      } else {
+        el.classList.remove('service_section_nav_menu_item_button_activated');
+      }
+    });
+
+    // Add blur for non-selected items
+    [...items].forEach(el => {
+      const blurElement = el.querySelector('.service_section_content_item_blur');
+      if (activatedElements.length && !activatedElements.includes(el.dataset.service)) {
+        blurElement.style.display = 'block';
+      } else {
+        blurElement.style.display = 'none';
+      }
+    });
+  };
+
+  [...buttons].forEach(el => el.addEventListener('click', buttonClickHandler));
+};
+
 // Add event listeners after page loaded
 window.addEventListener('load', burgerMenuHandler);
 window.addEventListener('load', changeActiveNavMenuItem);
+window.addEventListener('load', serviceSectionHandler);
