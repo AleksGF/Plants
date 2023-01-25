@@ -94,9 +94,15 @@ const serviceSectionHandler = () => {
     [...items].forEach(el => {
       const blurElement = el.querySelector('.service_section_content_item_blur');
       if (activatedElements.length && !activatedElements.includes(el.dataset.service)) {
-        blurElement.style.display = 'block';
+        blurElement.style.width = '100%';
+        blurElement.style.height = '100%';
+        blurElement.style.left = '0%';
+        blurElement.style.top = '0%';
       } else {
-        blurElement.style.display = 'none';
+        blurElement.style.width = '0%';
+        blurElement.style.height = '0%';
+        blurElement.style.left = '50%';
+        blurElement.style.top = '50%';
       }
     });
   };

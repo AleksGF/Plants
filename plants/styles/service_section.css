@@ -70,11 +70,14 @@
 }
 
 .service_section_content_item_blur {
-  display: none;
+  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  top: 50%;
+  width: 0%;
+  height: 0%;
   backdrop-filter: blur(4px);
+  transition: .5s;
 }
 
 .service_section_content_item_img {
