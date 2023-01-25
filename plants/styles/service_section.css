@@ -46,7 +46,7 @@
   color: #FFFFFF;
 }
 
-.service_section_nav_menu_item_button_activated {
+.service_section_nav_menu_item_button.active {
   background-color: #E06733;
   color: #FFFFFF;
   font-weight: 700;

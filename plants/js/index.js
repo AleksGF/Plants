@@ -84,9 +84,9 @@ const serviceSectionHandler = () => {
     // Add active class for selected buttons
     [...buttons].forEach(el => {
       if (activatedElements.includes(el.dataset.action)) {
-        el.classList.add('service_section_nav_menu_item_button_activated');
+        el.classList.add('active');
       } else {
-        el.classList.remove('service_section_nav_menu_item_button_activated');
+        el.classList.remove('active');
       }
     });
 
