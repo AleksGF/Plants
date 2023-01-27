@@ -132,7 +132,7 @@
 
   /* Price Section */
   .price_section {
-    padding: 40px 109px 115px 109px;
+    padding: 40px 109px 40px 109px;
   }
 
   .price_section_wrapper {
@@ -147,7 +147,6 @@
 
   .price_section_prices_content {
     width: 332px;
-    height: 282px;
     padding: 19px 0 17px 0;
   }
 
@@ -181,6 +180,7 @@
 
   .price_section_contact_img {
     margin-top: 40px;
+    margin-bottom: 75px;
   }
 
   /* Contacts section */

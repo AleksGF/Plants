@@ -1,10 +1,5 @@
 console.log(``);
 
-// Remove anchor link
-onhashchange = e => {
-  history.replaceState(null, "", e.oldURL);
-};
-
 // Handle for burger nav menu actions
 const burgerMenuHandler = () => {
   const burgerBtn = document.querySelector('.header__nav_burger');
@@ -82,7 +77,7 @@ const serviceSectionHandler = () => {
     }
 
     // Add active class for selected buttons
-    [...buttons].forEach(el => {
+    buttons.forEach(el => {
       if (activatedElements.includes(el.dataset.action)) {
         el.classList.add('active');
       } else {
@@ -91,7 +86,7 @@ const serviceSectionHandler = () => {
     });
 
     // Add blur for non-selected items
-    [...items].forEach(el => {
+    items.forEach(el => {
       const blurElement = el.querySelector('.service_section_content_item_blur');
       if (activatedElements.length && !activatedElements.includes(el.dataset.service)) {
         blurElement.style.width = '100%';
@@ -107,10 +102,54 @@ const serviceSectionHandler = () => {
     });
   };
 
-  [...buttons].forEach(el => el.addEventListener('click', buttonClickHandler));
+  buttons.forEach(el => el.addEventListener('click', buttonClickHandler));
+};
+
+// Prices section handler
+const pricesSectionHandler = () => {
+  const priceItems = document.querySelectorAll('.price_section_prices_content_item');
+
+  const priceItemClickHandler = e => {
+    const openBtns = document.querySelectorAll('.price_section_prices_content_item_btn');
+    const orderBtns = document.querySelectorAll('.price_section_prices_content_item_button');
+
+    const toggleActive = targetItem => {
+      priceItems.forEach(item => {
+        if (item === targetItem) {
+          item.classList.toggle('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    };
+
+    // Open-Close buttons actions
+    if ([...openBtns].includes(e.target)) toggleActive(e.currentTarget);
+
+    // Order buttons actions
+    if ([...orderBtns].includes(e.target)) {
+      window.location.replace(`${window.location.href}#contacts`);
+    }
+  };
+
+  priceItems.forEach(el => {
+    el.addEventListener('click', priceItemClickHandler)
+  });
 };
 
 // Add event listeners after page loaded
-window.addEventListener('load', burgerMenuHandler);
-window.addEventListener('load', changeActiveNavMenuItem);
-window.addEventListener('load', serviceSectionHandler);
+const handlers = [
+  burgerMenuHandler,
+  changeActiveNavMenuItem,
+  serviceSectionHandler,
+  pricesSectionHandler
+];
+
+handlers.forEach((handler) => {
+  window.addEventListener('load', handler);
+});
+
+// Remove anchor link
+onhashchange = e => {
+  history.replaceState(null, "", e.oldURL);
+};
