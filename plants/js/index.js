@@ -153,7 +153,20 @@ const contactsHandler = () => {
   const selectOptionContainer = document.querySelector('.contacts_section_btn_options');
   const addressContainer = document.querySelector('.contacts_section_content');
 
+  const outsideClickHandler = e => {
+    if (contactSelectBtn.contains(e.target)) return;
+    if (selectOptionContainer.contains(e.target)) return;
+
+    toggleSelectBtn();
+  };
+
   const toggleSelectBtn = () => {
+    if (!isSelectOpen) {
+      document.addEventListener('click', outsideClickHandler);
+    } else {
+      document.removeEventListener('click', outsideClickHandler);
+    }
+
     contactSelectBtn.classList.toggle('open');
     isSelectOpen = !isSelectOpen;
   };
