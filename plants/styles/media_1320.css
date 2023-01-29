@@ -205,10 +205,17 @@
     line-height: 52px;
   }
 
+  .contacts_section_select {
+    width: 450px;
+  }
+
   .contacts_section_btn {
     margin-top: 95px;
-    width: 450px;
     padding: 0 35px 0 20px;
+  }
+
+  .contacts_section_content {
+    margin-top: 45px;
   }
 
   /* Footer styles */

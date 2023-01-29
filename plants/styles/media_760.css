@@ -221,11 +221,18 @@
     line-height: 52px;
   }
 
+  .contacts_section_select {
+    width: 450px;
+    order: 1;
+  }
+
   .contacts_section_btn {
     margin-top: 98px;
-    order: 1;
-    width: 450px;
     padding: 0 35px 0 20px;
+  }
+
+  .contacts_section_content {
+    margin-top: 60px;
   }
 
   /* Footer styles */

@@ -245,11 +245,19 @@
     line-height: 33px;
   }
 
+  .contacts_section_select {
+    width: 280px;
+    order: 1;
+  }
+
   .contacts_section_btn {
     margin-top: 81px;
-    order: 1;
-    width: 280px;
     padding: 0 10px;
+  }
+
+  .contacts_section_content {
+    margin-top: 50px;
+    line-height: 20px;
   }
 
   /* Footer styles */
