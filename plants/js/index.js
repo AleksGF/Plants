@@ -1,8 +1,8 @@
-import {burgerMenuHandler} from "./burgerMenuHandler";
-import {changeActiveNavMenuItem} from "./changeActiveNavMenuItem";
-import {serviceSectionHandler} from "./serviceSectionHandler";
-import {pricesSectionHandler} from "./pricesSectionHandler";
-import {contactsHandler} from "./contactsHandler";
+import {burgerMenuHandler} from "./burgerMenuHandler.js";
+import {changeActiveNavMenuItem} from "./changeActiveNavMenuItem.js";
+import {serviceSectionHandler} from "./serviceSectionHandler.js";
+import {pricesSectionHandler} from "./pricesSectionHandler.js";
+import {contactsHandler} from "./contactsHandler.js";
 
 // Add event listeners after page loaded
 const handlers = [
