@@ -48,9 +48,9 @@ export const contactsHandler = () => {
         address.phone.slice(8)}` : '';
       addressField.innerHTML = address.address || '';
 
-      contactBtn.addEventListener('click', () => {
+      contactBtn.onclick = () => {
         window.open(`tel:${address.phone}`);
-      });
+      }
 
       contactSelectBtn.classList.add('selected');
       isContactSelected = true;
