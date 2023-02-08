@@ -390,12 +390,12 @@ body, ul, p, h1, h2, h4 {
 .price_section_prices_content_item_description {
   max-height: 0;
   overflow: hidden;
-  transition: all linear 1s;
+  transition: all 1s linear;
 }
 
 .price_section_prices_content_item.active .price_section_prices_content_item_description {
   max-height: 150px;
-  transition: all linear 1s .5s;
+  transition: all 1s linear .5s;
 }
 
 .price_section_prices_content_item_line {
@@ -520,11 +520,13 @@ body, ul, p, h1, h2, h4 {
 }
 
 .contacts_section_select {
+  position: relative;
   width: 450px;
+  min-height: 350px;
+  margin-top: 95px;
 }
 
 .contacts_section_btn {
-  margin-top: 95px;
   padding: 0 35px 0 20px;
   background: #D6E7D2;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -545,7 +547,6 @@ body, ul, p, h1, h2, h4 {
 }
 
 .contacts_section_btn:active {
-  box-shadow: none;
   background: #C1E698;
   border: 1px solid #D6E7D2;
 }
@@ -575,6 +576,7 @@ body, ul, p, h1, h2, h4 {
 .contacts_section_btn.open ~ .contacts_section_btn_options {
   max-height: 1500px;
   padding: 25px 35px 30px 35px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contacts_section_btn.selected {
@@ -584,7 +586,7 @@ body, ul, p, h1, h2, h4 {
 }
 
 .contacts_section_btn.selected ~ .contacts_section_content {
-  max-height: 1500px;
+  visibility: visible;
   padding: 25px 35px;
   border: 1px solid #000000;
   border-radius: 20px;
@@ -612,6 +614,8 @@ body, ul, p, h1, h2, h4 {
 }
 
 .contacts_section_btn_options {
+  position: absolute;
+  width: 100%;
   max-height: 0;
   padding: 0 35px;
   background: #DCE9D9;
@@ -619,7 +623,7 @@ body, ul, p, h1, h2, h4 {
   letter-spacing: 0.05em;
   color: #499A18;
   overflow: hidden;
-  transition: 1s;
+  transition: all .5s linear;
 }
 
 .contacts_section_btn_optionsItem {
@@ -635,15 +639,13 @@ body, ul, p, h1, h2, h4 {
 .contacts_section_content {
   margin-top: 45px;
   display: flex;
-  max-height: 0;
+  visibility: hidden;
   flex-direction: column;
   background: #EDF2EC;
   padding: 0 35px;
   line-height: 40px;
   letter-spacing: 0.05em;
   color: #717171;
-  overflow: hidden;
-  transition: 1s;
 }
 
 .contacts_section_content_header {
@@ -665,7 +667,7 @@ body, ul, p, h1, h2, h4 {
   line-height: 13px;
   text-align: center;
   color: #717171;
-  transition: 1s;
+  transition: background-color 1s, color 1s;
 }
 
 .contacts_section_content_callUs_btn:hover {
@@ -853,19 +855,19 @@ body, ul, p, h1, h2, h4 {
   }
 
   .contacts_section_img {
-    margin-top: 120px;
     width: 200px;
     height: 250px;
     order: 2;
   }
 
   .contacts_section_header {
-    margin: 0 15px;
+    margin: 0 0 50px 0;
     order: 0;
   }
 
   .contacts_section_select {
     order: 1;
+    margin: 0;
   }
 
   /* Footer styles */
@@ -1095,7 +1097,6 @@ body, ul, p, h1, h2, h4 {
   }
 
   .contacts_section_btn {
-    margin-top: 80px;
     padding: 0 20px;
   }
 
