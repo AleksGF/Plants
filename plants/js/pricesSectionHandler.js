@@ -3,7 +3,7 @@ export const pricesSectionHandler = () => {
   const priceItems = document.querySelectorAll('.price_section_prices_content_item');
 
   const priceItemClickHandler = e => {
-    const openBtns = document.querySelectorAll('.price_section_prices_content_item_btn');
+    const openBtn = e.target.closest('.price_section_prices_content_item');
     const orderBtns = document.querySelectorAll('.price_section_prices_content_item_button');
 
     const toggleActive = targetItem => {
@@ -17,7 +17,7 @@ export const pricesSectionHandler = () => {
     };
 
     // Open-Close buttons actions
-    if ([...openBtns].includes(e.target)) toggleActive(e.currentTarget);
+    if (openBtn && ![...orderBtns].includes(e.target)) toggleActive(e.currentTarget);
 
     // Order buttons actions
     if ([...orderBtns].includes(e.target)) {

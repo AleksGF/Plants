@@ -306,7 +306,7 @@ body, ul, p, h1, h2, h4 {
 
 /* Price Section */
 .price_section {
-  padding: 40px 110px;
+  padding: 40px 110px 15px 110px;
 }
 
 .price_section_wrapper {
@@ -321,6 +321,10 @@ body, ul, p, h1, h2, h4 {
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.price_section_prices_contentWrapper {
+  min-height: 360px;
 }
 
 .price_section_prices_content {
@@ -341,7 +345,6 @@ body, ul, p, h1, h2, h4 {
   margin-bottom: 5px;
   background: #EDF2EC;
   border-radius: 20px;
-  transition: 1s;
 }
 
 .price_section_prices_content_item.active {
@@ -387,11 +390,12 @@ body, ul, p, h1, h2, h4 {
 .price_section_prices_content_item_description {
   max-height: 0;
   overflow: hidden;
-  transition: 1s;
+  transition: all linear 1s;
 }
 
 .price_section_prices_content_item.active .price_section_prices_content_item_description {
   max-height: 150px;
+  transition: all linear 1s .5s;
 }
 
 .price_section_prices_content_item_line {
@@ -485,7 +489,6 @@ body, ul, p, h1, h2, h4 {
   width: 150px;
   height: 175px;
   margin-top: 40px;
-  margin-bottom: 75px;
 }
 
 /* Contacts section */
@@ -825,7 +828,7 @@ body, ul, p, h1, h2, h4 {
 
   /* Price Section */
   .price_section {
-    padding: 40px 50px;
+    padding: 40px 50px 10px 50px;
   }
 
   .price_section_prices_header {
@@ -1018,7 +1021,7 @@ body, ul, p, h1, h2, h4 {
 
   /* Price Section */
   .price_section {
-    padding: 25px;
+    padding: 25px 25px 10px 25px;
   }
 
   .price_section_wrapper {
@@ -1128,7 +1131,7 @@ body, ul, p, h1, h2, h4 {
 
   /* Price Section */
   .price_section {
-    padding: 25px 0;
+    padding: 25px 0 10px 0;
   }
 
   /* Contacts section */
