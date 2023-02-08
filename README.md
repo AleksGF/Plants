@@ -1,2 +1,1 @@
-# aleksgf-JSFEPRESCHOOL2022Q4
-Private repository for @aleksgf
+https://aleksgf.github.io/plants/
