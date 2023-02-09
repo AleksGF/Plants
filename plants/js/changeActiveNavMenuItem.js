@@ -11,7 +11,7 @@ export const changeActiveNavMenuItem = () => {
     });
 
     [...menuItemsCollection].forEach((el, ind, arr) => {
-      if (el.sectionCoords.top > -150 && el.sectionCoords.top < 150) {
+      if (el.sectionCoords.top > -150 && el.sectionCoords.top < 350) {
         if (!el.menuItem.classList.contains('active')) {
           arr.forEach(el => el.menuItem.classList.remove('active'));
           el.menuItem.classList.add('active');
