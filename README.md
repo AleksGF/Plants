@@ -1,1 +1,1 @@
-https://aleksgf.github.io/plants/
+https://aleksgf.github.io/Plants/plants/
