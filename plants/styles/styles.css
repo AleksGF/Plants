@@ -50,7 +50,7 @@ body, ul, p, h1, h2, h4 {
 }
 
 .header__nav_menu {
-  width: 400px;
+  width: 480px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +64,8 @@ body, ul, p, h1, h2, h4 {
 }
 
 .header__nav_menu_item {
-  width: 70px;
+  flex: 0 0 75px;
+  margin: 0 10px;
   text-align: center;
 }
 
@@ -384,12 +385,12 @@ body, ul, p, h1, h2, h4 {
 .price_section_prices_content_item_description {
   max-height: 0;
   overflow: hidden;
-  transition: all 1s linear;
+  transition: all .5s linear;
 }
 
 .price_section_prices_content_item.active .price_section_prices_content_item_description {
   max-height: 150px;
-  transition: all 1s linear .5s;
+  transition: all .5s linear .5s;
 }
 
 .price_section_prices_content_item_line {
@@ -622,6 +623,7 @@ body, ul, p, h1, h2, h4 {
 
 .contacts_section_btn_optionsItem {
   border-bottom: 1px solid #D9D9D9;
+  transition: .5s;
 }
 
 .contacts_section_btn_optionsItem:hover {
@@ -661,7 +663,7 @@ body, ul, p, h1, h2, h4 {
   line-height: 13px;
   text-align: center;
   color: #717171;
-  transition: background-color 1s, color 1s;
+  transition: background-color .5s, color .5s;
 }
 
 .contacts_section_content_callUs_btn:hover {
@@ -909,6 +911,7 @@ body, ul, p, h1, h2, h4 {
     padding: 10px 25px 5px 10px;
     background-color: #EDF2EC;
     opacity: 90%;
+    line-height: 30px;
     transition: .5s linear;
   }
 
